@@ -1,12 +1,19 @@
-import { Button } from "@workspace/ui/components/button"
+import { Navbar } from "../components/web/navbar"
+import { Hero } from "../components/web/hero"
+import { Pricing } from "../components/web/pricing"
+import { Footer } from "../components/web/footer"
 
-export default function Page() {
+export default function HomePage() {
   return (
-    <div className="flex items-center justify-center min-h-svh">
-      <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl font-bold">Hello World</h1>
-        <Button size="sm">Button</Button>
-      </div>
+    <div className="min-h-screen bg-[#FDFCF8] text-stone-900 font-sans selection:bg-orange-100 selection:text-orange-900">
+      {/* Navigation */}
+      <Navbar />
+      {/* Hero Section */}
+      <Hero />
+      {/* Pricing Section */}
+      <Pricing />
+      {/* Footer Minimal */}
+      <Footer />
     </div>
   )
 }
