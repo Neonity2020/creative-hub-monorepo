@@ -1,3 +1,8 @@
+
+![landing-page](https://github.com/user-attachments/assets/207800f4-f9ca-405a-a7e9-15bc770697b9)
+![landing-page-2](https://github.com/user-attachments/assets/6ca71cd3-d10d-4194-a505-69718509995a)
+![dashboard](https://github.com/user-attachments/assets/20d2b8b8-059f-44a8-9938-0cbe73045bdb)
+
 # shadcn/ui monorepo template
 
 This template is for creating a monorepo with shadcn/ui.
