@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState } from 'react';
 import {
@@ -173,6 +173,7 @@ export default function DashboardPage() {
              </div>
 
              <div className="flex gap-6 overflow-x-auto pb-6 -mx-8 px-8 scrollbar-hide">
+                <CreationCard imagePath="/living-room-background.jpg" title="Living Room Design" date="Dec 15, 2024" />
                 <CreationCard imageId={10} title="Cyberpunk Street" date="Nov 8, 2024" />
                 <CreationCard imageId={11} title="Natural Portrait" date="Nov 8, 2024" />
                 <CreationCard imageId={12} title="Abstract Shapes" date="Nov 7, 2024" />

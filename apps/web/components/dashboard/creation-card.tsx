@@ -1,17 +1,20 @@
 import Image from 'next/image';
 
 interface CreationCardProps {
-  imageId: number;
+  imageId?: number;
+  imagePath?: string;
   title: string;
   date: string;
 }
 
-export function CreationCard({ imageId, title, date }: CreationCardProps) {
+export function CreationCard({ imageId, imagePath, title, date }: CreationCardProps) {
+  const imageSrc = imagePath ? imagePath : `https://picsum.photos/id/${imageId}/400/300`;
+
   return (
     <div className="min-w-[280px] bg-white rounded-xl border border-stone-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
       <div className="h-40 overflow-hidden relative">
         <Image
-          src={`https://picsum.photos/id/${imageId}/400/300`}
+          src={imageSrc}
           alt={title}
           width={400}
           height={300}
