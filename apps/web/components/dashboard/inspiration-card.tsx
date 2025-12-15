@@ -25,7 +25,7 @@ export function InspirationCard({ imageId, heightClass }: InspirationCardProps) 
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 overflow-hidden">
                  <Image
-                   src={`https://picsum.photos/id/${imageId + 50}/100/100`}
+                   src={`https://picsum.photos/id/${imageId + 51 === 153 ? 154 : imageId + 51}/100/100`}
                    alt="Artist"
                    width={100}
                    height={100}
